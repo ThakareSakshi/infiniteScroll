@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Pirata+One&family=Tangerine&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Tangerine', cursive;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Monoton', sans-serif;
+}
+main{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.container{
+   
+    width: 300px;
+    /* border-radius: 20px; */
+    /* border:2px solid grey; */
+    overflow: hidden;
+    position: relative;
+    min-width: 310px;
+    height: 500px; 
+    transition: .8s linear All;
+    padding: 10px;
+    box-shadow: 2px 2px 8px grey;
+}
+
+
+img{
+    height:80%;
+    width: 100%;
+}
+.likes{
+    position: absolute;
+    /* top:10px; */
+    /* left:40%; */
+    text-align: center;
+    bottom: 10px;
+    right:20px;
+    z-index: -1;
+    /* height:100%;
+    width: 100%; */
+    /* background-color: rgba(0, 0, 0, 0.445); */
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.like-count{
+    /* color:white; */
+    font-size: 20px;
+}
+.des{
+    padding:10px;
+    text-align: center;
+    position: absolute;
+    z-index: -1;
+    /* background-color: rgba(240, 248, 255, 0.397); */
+    font-size: 32px;
+    font-weight: 700;
+  
+
+}
+.container:hover .des{
+    bottom: 30px;
+    z-index: 3;
+}
+.container:hover .likes{
+   
+    z-index: 2;
+}
+.container:hover img{
+    transform: scale(1.1);
+}
